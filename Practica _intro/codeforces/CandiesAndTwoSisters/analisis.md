@@ -1,2 +1,1 @@
-![Problema](C:\Users\renat\Downloads\candiesandtwosisters.png)
-
+![Problema](https://media.discordapp.net/attachments/1083902726179672125/1087180933653872701/candiesandtwosisters.png?width=733&height=507)
