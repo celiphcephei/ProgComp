@@ -3,8 +3,13 @@
 using namespace std;
 
 int main(){
-    int A[10] = {6,8,4,5,22,74,748,29,2,0};
-    for(int j = 1; j < 10; j++){
+    vector<int> A(5); 
+    for(int i = 0; i < 5; i++){
+        int n;
+        cin >> n;
+        A[i] = n;
+    }
+    for(int j = 1; j < 5; j++){
         int key = A[j];
         int i = j - 1;
         while(i >= 0 && A[i] > key){
@@ -13,8 +18,8 @@ int main(){
         }
         A[i + 1] = key;
     }
-    for(int k = 0; k < 10; k++){
-        cout << A[k] << '\n';
+    for(int i = 0; i < 5; i++){
+        cout << A[i];
     }
     return 0;
 }
