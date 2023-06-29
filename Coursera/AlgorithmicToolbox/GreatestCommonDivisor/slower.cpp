@@ -5,7 +5,7 @@
 using std::cout;
 using std::cin;
 
-unsigned ll GreatesCommonDivisor(unsigned ll a, unsigned ll b){
+int GreatesCommonDivisor(unsigned ll a, unsigned ll b){
     int result = 0;
     for(unsigned ll i = 1; i <= (a + b); ++i){
         if((a % i == 0) && (b % i == 0)) result = i;

@@ -4,7 +4,7 @@
 using std::cout;
 using std::cin;
 
-unsigned ll euclid(unsigned ll a, unsigned ll b){
+int euclid(unsigned ll a, unsigned ll b){
     if(b == 0) return a;
 
     int a_prime = a % b;
