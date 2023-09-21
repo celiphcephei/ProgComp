@@ -1,15 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
-// Pendiente a corregir, al convertir a string numeros como 04 07 elimina el 0
-bool luckyNumber(long long n){
-    string numberString = to_string(n);
-    for(char &digit : numberString){
-        if(digit != '7' && digit != '4') return false;
+bool luckyNumber(string n){
+    int count{0};
+    for(const char& digit : n){
+        if(digit == '7' || digit == '4') ++count;
     }
-    return true;
+    if(count == 4 || count == 7) return true;
+    else return false;
 }
 int main(){
-    long long n;
-    cin >> n;
+    string n; cin >> n;
     (luckyNumber(n)) ? printf("YES\n") : printf("NO\n");
 }
