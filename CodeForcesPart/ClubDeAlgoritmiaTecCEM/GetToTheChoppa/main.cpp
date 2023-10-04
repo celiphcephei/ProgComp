@@ -7,7 +7,6 @@ int main(){
     for(int i{0}; i < n; ++i){
      	int minuto; cin >> minuto;
      	string name; cin >> name;
-        cin.clear();
         flavors.emplace(minuto, name); 
     }
     for(auto &[mm, nam] : flavors) 
