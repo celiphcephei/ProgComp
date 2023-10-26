@@ -14,6 +14,13 @@ bool is_prime(int n){
 }
 
 int main(){
-  
+  int n; scanf("%d", &n);
+  int a{n / 2}, b;
+  b = n - a;
+  while(is_prime(a) || is_prime(b)){
+    ++a;
+    --b;
+  }
+  printf("%d %d\n", a, b);
   return 0;
 }

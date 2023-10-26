@@ -6,14 +6,14 @@ using namespace std;
 #define debug(x) cout << #x << " = " << x << endl;
 #define GC getchar()
 
-bool is_prime(int n){
-  if(n <= 1) return false;
-  for(int i{2}; i*i <= n; ++i)
-    if(n % i == 0) return false;
-  return true;
+void solve(){
+  int a, b, c; scanf("%d %d %d", &a, &b, &c);
+  if(a + b == c || a + c == b || b + c == a) printf("YES\n");
+  else printf("NO\n");
 }
 
 int main(){
-  
+  int t; scanf("%d", &t);
+  while(t--) solve(); 
   return 0;
 }
